@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Feni University Cyber Cell</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Admin Login -->
+  <section class="form-section" id="loginSection">
+    <h2>Admin Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </section>
+
+  <!-- Admin Dashboard -->
+  <section class="form-section" id="dashboard" style="display:none;">
+    <h2>Submitted Cyber Problems</h2>
+    <table border="1" width="100%" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Department</th>
+          <th>Email</th>
+          <th>Number</th>
+          <th>Gender</th>
+          <th>Problem</th>
+        </tr>
+      </thead>
+      <tbody id="dataTable"></tbody>
+    </table>
+    <br>
+    <button class="submit-btn" id="clearData">Clear All Data</button>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>

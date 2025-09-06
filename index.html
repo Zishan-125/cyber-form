@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feni University Cyber Cell</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="" >
+    <div class="logos">
+      <img src="university-logo.jpg" alt="University Logo" class="logo">
+      <h1>ফেনী ইউনিভার্সিটি সাইবার সেল সৌজন্যে নচকখ</h1>
+      <img src="nochkokh-logo.jpeg" alt="নচকখ Logo" class="logo">
+    </div>
+  </header>
+
+ <!-- Form Section -->
+<section class="form-section">
+  <h2>আপনার সাইবার সম্পর্কিত সমস্যা জমা দিন</h2>
+  <form action="https://formspree.io/f/xwpnaeab" method="POST">
+    
+    <div class="form-group">
+      <label for="name">নাম</label>
+      <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন" required>
+    </div>
+
+    <div class="form-group">
+      <label for="id">আইডি</label>
+      <input type="text" id="id" name="student_id" placeholder="আপনার আইডি লিখুন" required>
+    </div>
+
+    <div class="form-group">
+      <label for="department">বিভাগ</label>
+      <input type="text" id="department" name="department" placeholder="আপনার বিভাগ লিখুন" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">ইমেইল</label>
+      <input type="email" id="email" name="email" placeholder="আপনার ইমেইল লিখুন" required>
+    </div>
+
+    <div class="form-group">
+      <label for="number">নাম্বার</label>
+      <input type="tel" id="number" name="phone" placeholder="আপনার মোবাইল নাম্বার লিখুন" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">জেন্ডার</label>
+      <select id="gender" name="gender" required>
+        <option value="">সিলেক্ট করুন</option>
+        <option value="Male">পুরুষ</option>
+        <option value="Female">মহিলা</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="problem">সাইবার সম্পর্কিত সমস্যা</label>
+      <textarea id="problem" name="problem" rows="4" placeholder="আপনার সমস্যার বিবরণ লিখুন..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">জমা দিন</button>
+  </form>
+</section>
+
+
+  <!-- Admin Panel Button -->
+<section class="form-section" style="text-align:center; margin-top:20px;">
+  <a href="admin.html" class="submit-btn" style="width:auto; padding:10px 20px;">অ্যাডমিন প্যানেলে যান</a>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Feni University Cyber Cell | All Rights Reserved</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
